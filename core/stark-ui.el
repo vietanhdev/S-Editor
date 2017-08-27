@@ -6,13 +6,11 @@
 
 
 ;; Smooth Scrolling and attractive mode (look like Sublime Text)
-(use-package sublimity
-  :config
-  (require 'sublimity-scroll)
-  ;; (require 'sublimity-map) ;; experimental
-  (require 'sublimity-attractive)
-  (sublimity-mode 1)
-  )
+;; From 'sublimity' package
+(require 'sublimity-scroll)
+;; (require 'sublimity-map) ;; experimental
+(require 'sublimity-attractive)
+(sublimity-mode 1)
 
 ;; Word wrap
 (global-visual-line-mode t)
@@ -32,8 +30,8 @@
 (setq tab-width 4)
 
 ;; Load editor theme
-(use-package monokai-theme
-  :config (load-theme 'monokai t))
+(use-package dracula-theme
+  :config (load-theme 'dracula t))
 
 ;; Load Icons
 ;; You need to run `M-x all-the-icons-install-fonts` to install all needed icon fonts.

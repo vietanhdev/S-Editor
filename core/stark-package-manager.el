@@ -4,21 +4,79 @@
 ;;   Included: Package Manager
 ;; ===============================================
 
+(require 'cl)
+
 ;; Load package manager
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
-; ;; Load `use-package`
-; ;; This can download other packages automatically, shorten Emacs startup time
-; ;; and provide a convenient way to configure packages.
-; (eval-when-compile
-;   (require 'use-package))
-; (require 'bind-key)                ;; if you use any :bind variant
+;; set package-user-dir to be relative to Stark install path
+(setq package-user-dir (expand-file-name "elpa" stark-dir))
+(package-initialize)
 
-; ;; If one package cannot be found, automatically download it.
-; ;; Comment this line for faster start up Emacs.
-; (setq use-package-always-ensure t)
+(defvar stark-packages
+  '(
+    use-package
+    bind-key
+    sublimity
+    dracula-theme
+    all-the-icons
+    neotree
+    key-chord
+    autopair
+    multiple-cursors
+    magit
+    company
+    yasnippet
+    counsel
+    flycheck
+    markdown-mode
+    emmet-mode
+    rainbow-mode
+    js2-mode
+    web-mode
+    web-beautify
+    ng2-mode
+    rvm
+    robe
+    anaconda-mode
+   )
+   
+  "list of packages to ensure are installed at launch.")
+
+
+(defun stark-packages-installed-p ()
+  "Check if all packages in `stark-packages' are installed."
+  (every #'package-installed-p stark-packages))
+
+(defun stark-require-package (package)
+  "Install PACKAGE unless already installed."
+  (unless (memq package stark-packages)
+    (add-to-list 'stark-packages package))
+  (unless (package-installed-p package)
+    (message "Installing package: %s" package)
+    (package-install package)))
+
+(defun stark-require-packages (packages)
+  "Ensure PACKAGES are installed. Missing packages are installed automatically."
+  (mapc #'stark-require-package packages))
+
+(define-obsolete-function-alias 'stark-ensure-module-deps 'stark-require-packages)
+
+(defun stark-install-packages ()
+  "Install all packages listed in `stark-packages'."
+  (unless (stark-packages-installed-p)
+    ;; check for new packages (package versions)
+    (message "%s" "Stark Editor is now refreshing its package database...")
+    (package-refresh-contents)
+    (message "%s" " done.")
+    ;; install the missing packages
+    (stark-require-packages stark-packages)))
+
+;; run package installation
+(stark-install-packages)
+
 
 ;; Load `use-package`
 ;; This can download other packages automatically, shorten Emacs startup time
@@ -28,10 +86,11 @@
   (package-install 'use-package))
 (eval-when-compile
   (require 'use-package))
-(require 'diminish)
+;;(require 'diminish)
 (require 'bind-key)
-;; If one package cannot be found, automatically download it.
-;; Comment this line for faster start up Emacs.
-(setq use-package-always-ensure t)
+
+;; Below line is for automatically installing packages using use-package and not necessary anymore
+;; comment out to shorten startup time
+;(setq use-package-always-ensure t)
 
 (provide 'stark-package-manager)
