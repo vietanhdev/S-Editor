@@ -1,0 +1,12 @@
+auto-save-list
+ido*
+*~
+network-security*
+.DS_Store
+url*
+recent*
+*#*
+elpa
+Tramp
+anaconda-mode
+.mc-lists.el
