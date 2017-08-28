@@ -1,9 +1,13 @@
+;;; stark-startup --- startup setting for Stark Editor
+;;; Commentary:
 ;; ===================== *** =====================
 ;;   This file is belong to
 ;;   STARK EDITOR - another Emacs configuration
 ;;   Included: Startup Options
 ;; ===============================================
 
+
+;;; Code:
 
 ;; Maximize window on starting
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -44,3 +48,4 @@ AN EMACS CONFIGURATION BY VIET-ANH NGUYEN   https://vietanhdev.com
 
 
 (provide 'stark-startup)
+;;; stark-startup.el ends here

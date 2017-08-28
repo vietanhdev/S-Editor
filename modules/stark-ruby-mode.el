@@ -1,6 +1,6 @@
-(use-package rvm
-  :init (rvm-use-default) ;; use rvm's default ruby for the current Emacs session
-  )
-(use-package robe)
+(require 'rvm)
+(rvm-use-default) ;; use rvm's default ruby for the current Emacs session
+
+(require 'robe)
 
 (provide 'stark-ruby-mode)

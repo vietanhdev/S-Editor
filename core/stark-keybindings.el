@@ -1,9 +1,14 @@
+;;; stark-keybindings --- global keybindings
+;;; Commentary:
 ;; ===================== *** =====================
 ;;   This file is belong to
 ;;   STARK EDITOR - another Emacs configuration
 ;;   Included: Global Keybindings
 ;; ===============================================
 
+;;; Code:
+
+;;;; BASIC KEYBINDINGS
 
 ;; Zoom in/ Zoom out
 (global-set-key (kbd "C-x C-+") 'text-scale-increase)
@@ -14,19 +19,18 @@
 
 ;; Manage buffers
 (defun stark-switch-to-previous-buffer ()
-  "Switch to previously open buffer.
-Repeated invocations toggle between the two most recently open buffers."
+  "Switch to previously open buffer. Repeated invocations toggle between the two most recently open buffers."
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
-(use-package key-chord
-  :config
-  (progn
-  (key-chord-mode 1)
-  (key-chord-define-global "jj" 'stark-switch-to-previous-buffer)
-  (key-chord-define-global "kk" 'next-buffer))
-  (key-chord-define-global "gg" 'goto-line)
-  (key-chord-define-global "yy" 'other-window)
-  (key-chord-define-global "xx" 'kill-buffer))
+
+(require 'key-chord)
+(key-chord-mode 1)
+(key-chord-define-global "jj" 'stark-switch-to-previous-buffer)
+(key-chord-define-global "kk" 'next-buffer)
+(key-chord-define-global "gg" 'goto-line)
+(key-chord-define-global "yy" 'other-window)
+(key-chord-define-global "xx" 'kill-buffer)
+
 
 ;; Move between windows
 (global-set-key (kbd "C-c <left>")  'windmove-left)
@@ -60,4 +64,35 @@ Repeated invocations toggle between the two most recently open buffers."
 (global-set-key (kbd "C-c c") 'stark-comment-dwim)
 
 
+;; Ivy Shortcuts
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+
+
+;; Multiple Cursors
+(global-set-key (kbd "C-x c") 'mc/edit-lines)
+(global-set-key (kbd "C->")  'mc/mark-next-like-this)
+(global-set-key (kbd "C-<")  'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<")  'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-<down-mouse-1>")  'mc/add-cursor-on-click)
+
+;; neotree - Directory View
+(global-set-key (kbd "C-x n o") 'neotree-toggle)
+
+
 (provide 'stark-keybindings)
+;;; stark-keybindings ends here

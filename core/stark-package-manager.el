@@ -1,8 +1,12 @@
+;;; stark-package-manager --- package manager for Stark Editor
+;;; Commentary:
 ;; ===================== *** =====================
 ;;   This file is belong to
 ;;   STARK EDITOR - another Emacs configuration
 ;;   Included: Package Manager
 ;; ===============================================
+
+
 
 (require 'cl)
 
@@ -11,14 +15,13 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+
 ;; set package-user-dir to be relative to Stark install path
 (setq package-user-dir (expand-file-name "elpa" stark-dir))
 (package-initialize)
 
 (defvar stark-packages
   '(
-    use-package
-    bind-key
     sublimity
     dracula-theme
     all-the-icons
@@ -43,7 +46,7 @@
     anaconda-mode
    )
    
-  "list of packages to ensure are installed at launch.")
+  "List of packages to ensure are installed at launch.")
 
 
 (defun stark-packages-installed-p ()
@@ -59,7 +62,7 @@
     (package-install package)))
 
 (defun stark-require-packages (packages)
-  "Ensure PACKAGES are installed. Missing packages are installed automatically."
+  "Ensure PACKAGES are installed.  Missing packages are installed automatically."
   (mapc #'stark-require-package packages))
 
 (define-obsolete-function-alias 'stark-ensure-module-deps 'stark-require-packages)
@@ -77,20 +80,5 @@
 ;; run package installation
 (stark-install-packages)
 
-
-;; Load `use-package`
-;; This can download other packages automatically, shorten Emacs startup time
-;; and provide a convenient way to configure packages.
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(eval-when-compile
-  (require 'use-package))
-;;(require 'diminish)
-(require 'bind-key)
-
-;; Below line is for automatically installing packages using use-package and not necessary anymore
-;; comment out to shorten startup time
-;(setq use-package-always-ensure t)
-
 (provide 'stark-package-manager)
+;;; stark-package-manager ends here

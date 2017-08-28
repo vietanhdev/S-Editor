@@ -1,3 +1,5 @@
+;;; stack-error-checking --- check syntax, word-use
+;;; Commentary:
 ;; ===================== *** =====================
 ;;   This file is belong to
 ;;   STARK EDITOR - another Emacs configuration
@@ -5,14 +7,13 @@
 ;; 			   Word-use checking for English
 ;; ===============================================
 
+;;; Code:
 
 ;; Flycheck
 ;; Realtime error checking while programming
-(use-package flycheck
-  :config
-  (global-flycheck-mode)
-  (setq flycheck-check-syntax-automatically '(mode-enabled save))
-  )
+(require 'flycheck)
+(global-flycheck-mode)
+(setq flycheck-check-syntax-automatically '(mode-enabled save))
 
 ;; Flyspell
 ;; Spell checking
@@ -26,3 +27,4 @@
 
 
 (provide 'stark-error-checking)
+;;; stark-error-checking ends here

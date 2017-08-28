@@ -1,5 +1,4 @@
 ;; This file is for saving user customized settings
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -7,7 +6,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (robe rvm anoconda-mode ng2-mode web-beautify web-mode js2-mode rainbow-mode emmet-mode markdown-mode key-chord multiple-cursors flycheck counsel yasnippet company autopair neotree all-the-icons monokai-theme sublimity use-package))))
+    (company yasnippet web-mode web-beautify sublimity rvm robe rainbow-mode ng2-mode neotree multiple-cursors markdown-mode magit key-chord js2-mode flycheck emmet-mode dracula-theme counsel autopair anaconda-mode all-the-icons))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -31,6 +31,12 @@
   "Core")
 (defvar stark-modules-dir (expand-file-name  "modules" stark-dir)
   "Stark modules")
+(defvar stark-themes-dir (expand-file-name  "themes" stark-dir)
+  "Stark themes")
+(defvar stark-fonts-dir (expand-file-name  "fonts" stark-dir)
+  "Stark fonts")
+(defvar stark-default-font-dir (expand-file-name  "SourceCodePro" stark-fonts-dir)
+  "Stark default font")
 
 ;; ispell path (for word-use checking)
 (defvar stark-ispell-path "/usr/local/bin/ispell")
@@ -55,20 +61,22 @@
 (add-to-list 'load-path stark-core-dir)
 (stark-add-subfolders-to-load-path stark-core-dir)
 (stark-add-subfolders-to-load-path stark-modules-dir)
+(stark-add-subfolders-to-load-path stark-themes-dir)
 
 
 (message "Loading Stark Editor...")
 
 
 ;; Load core modules
-(require 'stark-package-manager)
+(require 'stark-startup)
 (require 'stark-ui)
+(require 'stark-package-manager)
 (require 'stark-autocomplete)
 (require 'stark-error-checking)
 (require 'stark-multiple-cursors)
 (require 'stark-keybindings)
 (require 'stark-module-init)
-(require 'stark-startup)
+
 
 (message "Stark Editor loading done...")
 
