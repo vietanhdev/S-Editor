@@ -46,6 +46,7 @@
     rvm
     robe
     anaconda-mode
+    yaml-mode
     diminish
    )
    
