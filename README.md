@@ -1,6 +1,9 @@
 # Stark Editor
 This is a new configuration for Emacs focusing on light weight and highly customizable structure.
 
+[Stark editor](screenshot/screenshot1.png)
+[Stark editor](screenshot/screenshot2.png)
+
 ## Quick Install Guide
 
 # Step 1: Clone Git repository:
@@ -29,8 +32,3 @@ If you have a question or need a hand in setting up this configuration, feel fre
 
 - Use C-\ and type ‘vietnamese-telex‘ / ‘vietnamese-viqr‘ / ‘vietnamese-vni‘ .
 - Use C-\ to toggle input method.
-
-## Some screenshots
-
-[Stark editor](screenshot/screenshot1.png)
-[Stark editor](screenshot/screenshot2.png)
