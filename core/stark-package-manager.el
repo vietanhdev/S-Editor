@@ -46,6 +46,7 @@
     rvm
     robe
     anaconda-mode
+    diminish
    )
    
   "List of packages to ensure are installed at launch.")

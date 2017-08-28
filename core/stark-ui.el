@@ -48,10 +48,8 @@
 ;; Confirm y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; nyan-mode Stark edition
-;; A customized package from nyan-mode
-(require 'nyan-mode-stark)
-(nyan-mode)
+
+(require 'stark-modeline)
 
 
 ;; Setup some UI elements which have dependencies
