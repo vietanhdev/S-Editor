@@ -10,12 +10,6 @@
 
 (require 'cl)
 
-;; Load package manager
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-
-
 ;; set package-user-dir to be relative to Stark install path
 (setq package-user-dir (expand-file-name "elpa" stark-dir))
 (package-initialize)

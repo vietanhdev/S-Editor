@@ -18,12 +18,12 @@
 ;; Flyspell
 ;; Spell checking
 (setq ispell-program-name stark-ispell-path)
-(dolist (hook '(text-mode-hook))
-  (add-hook hook (lambda () (flyspell-mode 1))))
-(dolist (hook '(change-log-mode-hook log-edit-mode-hook))
-  (add-hook hook (lambda () (flyspell-mode -1))))
-(dolist (hook '(markdown-mode-hook))
-  (add-hook hook (lambda () (flyspell-mode 1))))
+;; (dolist (hook '(text-mode-hook))
+;;   (add-hook hook (lambda () (flyspell-mode 1))))
+;; (dolist (hook '(change-log-mode-hook log-edit-mode-hook))
+;;   (add-hook hook (lambda () (flyspell-mode -1))))
+;; (dolist (hook '(markdown-mode-hook))
+;;   (add-hook hook (lambda () (flyspell-mode 1))))
 
 
 (provide 'stark-error-checking)

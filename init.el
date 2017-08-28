@@ -4,7 +4,12 @@
 ;;   Included: Init file
 ;; ===============================================
 
+
+;; Load package manager
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
+
 
 
 ;; Speedup Emacs
@@ -64,17 +69,22 @@
 
 
 ;; Load core modules
-(require 'stark-startup)
 (require 'stark-ui)
-(require 'stark-package-manager)
-(require 'stark-autocomplete)
-(require 'stark-error-checking)
-(require 'stark-multiple-cursors)
-(require 'stark-keybindings)
-(require 'stark-module-init)
+(require 'stark-startup)
 
 
-(message "Stark Editor loading done...")
+;; Deplay loading
+(defun stark-load-after-init ()
+  (message "%s" "Loading components...")
+  (require 'stark-package-manager)
+  (require 'stark-autocomplete)
+  (require 'stark-error-checking)
+  (require 'stark-multiple-cursors)
+  (require 'stark-keybindings)
+  (require 'stark-module-init)
+  (message "%s" "Loading done!"))
+(add-hook 'after-init-hook 'stark-load-after-init)
+
 
 (setq custom-file stark-custom-file)
 (load custom-file)
