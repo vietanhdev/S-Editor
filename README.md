@@ -1,8 +1,8 @@
 # Stark Editor
 This is a new configuration for Emacs focusing on light weight and highly customizable structure.
 
-[Stark editor](screenshot/screenshot1.png)
-[Stark editor](screenshot/screenshot2.png)
+![Stark editor](screenshot/screenshot1.png)
+![Stark editor](screenshot/screenshot2.png)
 
 ## Quick Install Guide
 
