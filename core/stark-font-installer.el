@@ -16,7 +16,7 @@
     (package-refresh-contents)
     (package-install 'all-the-icons)
     (require 'all-the-icons)
-    (all-the-icons-install-fonts)))
+    (all-the-icons-install-fonts 1)))
 
 (defun stark-install-default-font ()
   (let* ((font-dest (cl-case window-system
