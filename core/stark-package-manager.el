@@ -20,11 +20,13 @@
 (setq package-user-dir (expand-file-name "elpa" stark-dir))
 (package-initialize)
 
+
+;; This package list does not contain: all-the-icons
+;; Other packages will be load later
 (defvar stark-packages
   '(
     sublimity
     dracula-theme
-    all-the-icons
     neotree
     key-chord
     autopair
