@@ -6,7 +6,7 @@ This is a new configuration for Emacs focusing on light weight and highly custom
 
 ## Quick Install Guide
 
-# Step 1: Clone Git repository:
+# Step 1: Clone Git repository
 
 Open Terminal, type:
 
@@ -22,7 +22,7 @@ This step will download and install all the packages and fonts automatically for
 
 It often takes some minutes to be completed. Please be partient!
 
-# Step 3: Restart Emacs and enjoy.
+# Step 3: Restart Emacs and enjoy!
 
 If you have a question or need a hand in setting up this configuration, feel free to contact me:
 
