@@ -4,15 +4,11 @@
 ;;   Included: Init file
 ;; ===============================================
 
-;; Speedup Emacs
-;; Decrease the number of garbage collection invocations
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
 (package-initialize)
 
+
+;; Speedup Emacs
+;; Decrease the number of garbage collection invocations
 (setq gc-cons-threshold 10000000)
 (add-hook 'emacs-startup-hook 'my/set-gc-threshold)
 (defun my/set-gc-threshold ()
