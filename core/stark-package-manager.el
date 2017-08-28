@@ -42,6 +42,7 @@
     anaconda-mode
     yaml-mode
     diminish
+    nyan-mode
    )
    
   "List of packages to ensure are installed at launch.")

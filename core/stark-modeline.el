@@ -11,7 +11,7 @@
 
 ;; nyan-mode Stark edition
 ;; A customized package from nyan-mode
-(require 'nyan-mode-stark)
+(require 'nyan-mode)
 (nyan-mode)
 
 

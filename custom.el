@@ -6,7 +6,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (telephone-line company yasnippet web-mode web-beautify sublimity rvm robe rainbow-mode ng2-mode neotree multiple-cursors markdown-mode magit key-chord js2-mode flycheck emmet-mode dracula-theme counsel autopair anaconda-mode all-the-icons))))
+    (nyan-mode diminish yaml-mode telephone-line company yasnippet web-mode web-beautify sublimity rvm robe rainbow-mode ng2-mode neotree multiple-cursors markdown-mode magit key-chord js2-mode flycheck emmet-mode dracula-theme counsel autopair anaconda-mode all-the-icons))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

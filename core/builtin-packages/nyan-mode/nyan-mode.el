@@ -295,6 +295,6 @@ option `scroll-bar-mode'."
     (setcar mode-line-position nyan-old-car-mode-line-position)))
 
 
-(provide 'nyan-mode-stark)
+(provide 'nyan-mode)
 
 ;;; nyan-mode.el ends here

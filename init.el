@@ -11,7 +11,6 @@
 (package-initialize)
 
 
-
 ;; Speedup Emacs
 ;; Decrease the number of garbage collection invocations
 (setq gc-cons-threshold 10000000)
