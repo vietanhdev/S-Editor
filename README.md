@@ -23,6 +23,7 @@ rm -rf ~/.emacs.d
 rm ~/.emacs
 wget https://github.com/vietanhdev/S-Editor/archive/master.zip -O emacsd.zip
 unzip emacsd.zip
+mkdir ~/.emacs.d
 cp -R S-Editor-master/* ~/.emacs.d/
 ~~~
 
