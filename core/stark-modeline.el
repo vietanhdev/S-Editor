@@ -11,8 +11,8 @@
 
 ;; nyan-mode Stark edition
 ;; A customized package from nyan-mode
-(require 'nyan-mode)
-(nyan-mode)
+;(require 'nyan-mode)
+;(nyan-mode)
 
 
 ;; Diminish modeline clutter

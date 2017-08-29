@@ -1,3 +1,5 @@
+(require 'stark-semantic)
+(require 'stark-cc-mode)
 (require 'stark-markdown-mode)
 (require 'stark-yaml-mode)
 (require 'stark-web-development)
