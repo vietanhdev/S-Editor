@@ -32,7 +32,10 @@
 
 
 ;; Tab width
+(setq-default indent-tabs-mode nil)
 (setq tab-width stark-default-tab-width)
+(defvaralias 'c-basic-offset 'tab-width)
+
 
 ;; Load editor theme
 (require 'dracula-theme)
@@ -64,7 +67,7 @@
   (stark-ensure-icon-fonts)
   (require 'all-the-icons)
 
-  ;; Set font, fontsize, tab-width
+  ;; Set font, fontsize
   ;; This configuration use "Source Code Pro" as default font. Please install this font if needed.
 
 
