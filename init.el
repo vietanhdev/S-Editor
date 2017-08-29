@@ -60,16 +60,19 @@
        (add-to-list 'load-path name)
        (stark-add-subfolders-to-load-path name)))))
 
-;; add Prelude's directories to Emacs's `load-path'
-(add-to-list 'load-path stark-modules-dir)
+;; add Stark's directories to Emacs's `load-path'
+(load (concat stark-dir "init-settings.el"))
 (add-to-list 'load-path stark-core-dir)
 (stark-add-subfolders-to-load-path stark-core-dir)
+(add-to-list 'load-path stark-modules-dir)
 (stark-add-subfolders-to-load-path stark-modules-dir)
 (stark-add-subfolders-to-load-path stark-themes-dir)
 
 
-(message "Loading Stark Editor...")
-
+;; Load settings file
+(defvar stark-setting-file (expand-file-name  "init-settings.el" stark-dir))
+(load stark-setting-file)
+(require 'stark-init-settings)
 
 ;; Load core modules
 (require 'stark-ui)

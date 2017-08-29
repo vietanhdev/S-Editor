@@ -9,8 +9,10 @@
 
 ;;; Code:
 
+(require 'stark-init-settings)
+
 ;; Turn off menubar, toolbar, scollbar
-;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+					;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
@@ -27,10 +29,10 @@
 
 ;; Word wrap
 (global-visual-line-mode t)
-  
+
 
 ;; Tab width
-(setq tab-width 4)
+(setq tab-width stark-default-tab-width)
 
 ;; Load editor theme
 (require 'dracula-theme)
@@ -55,28 +57,35 @@
 ;; Setup some UI elements which have dependencies
 (add-hook 'after-init-hook 'stark-load-ui-after-startup)
 (defun stark-load-ui-after-startup ()
-	(require 'stark-font-installer)
+  (require 'stark-font-installer)
 
-	;; You need to run `M-x all-the-icons-install-fonts` to install all needed icon fonts.
-	;; See: https://github.com/domtronn/all-the-icons.el
-	(stark-ensure-icon-fonts)
-	(require 'all-the-icons)
+  ;; You need to run `M-x all-the-icons-install-fonts` to install all needed icon fonts.
+  ;; See: https://github.com/domtronn/all-the-icons.el
+  (stark-ensure-icon-fonts)
+  (require 'all-the-icons)
 
-	;; Set font, fontsize, tab-width
-	;; This configuration use "Source Code Pro" as default font. Please install this font if needed.
-	;; Install Source Code Pro font
-	(defun font-exists-p (font) "check if font exists" (if (null (x-list-fonts font)) nil t))
-	(unless (font-exists-p "Source Code Pro")
-	  (stark-install-default-font))
-	(set-face-attribute 'default nil
-	                    :family "Source Code Pro"
-	                    :height 160
-	                    :weight 'normal
-	                    :width 'normal)
+  ;; Set font, fontsize, tab-width
+  ;; This configuration use "Source Code Pro" as default font. Please install this font if needed.
 
-	;; Display a directory tree view on the left side
-	(require 'neotree)
-	(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+  (if stark-ensure-source-code-pro
+      
+      ;; Install Source Code Pro font
+      (defun font-exists-p (font) "check if font exists"
+	     (if (null (x-list-fonts font)) nil t))
+    (unless (font-exists-p "Source Code Pro")
+      (stark-install-default-font)))
+  
+  
+  (set-face-attribute 'default nil
+		      :family stark-default-font
+		      :height stark-default-font-height
+		      :weight 'normal
+		      :width 'normal)
+
+  ;; Display a directory tree view on the left side
+  (require 'neotree)
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
   )
 

@@ -10,10 +10,10 @@
 
 
 ;; nyan-mode Stark edition
-;; A customized package from nyan-mode
-;(require 'nyan-mode)
-;(nyan-mode)
-
+(if stark-active-nyan-cat
+    (progn
+     (require 'nyan-mode)
+     (nyan-mode)))
 
 ;; Diminish modeline clutter
 (require 'diminish)

@@ -15,12 +15,10 @@
 (package-initialize)
 
 
-;; This package list does not contain: all-the-icons
+;; This package list does not contain: all-the-icons, nyan-mode,  dracula-theme, sublimity, diminish
 ;; Other packages will be load later
 (defvar stark-packages
   '(
-    sublimity
-    dracula-theme
     neotree
     key-chord
     autopair
@@ -41,8 +39,6 @@
     robe
     anaconda-mode
     yaml-mode
-    diminish
-    nyan-mode
    )
    
   "List of packages to ensure are installed at launch.")

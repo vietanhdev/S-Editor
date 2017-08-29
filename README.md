@@ -11,9 +11,19 @@ This is a new configuration for Emacs focusing on light weight and highly custom
 Open Terminal, type:
 
 ~~~ bash
-rm -r ~/.emacs.d
+rm -rf ~/.emacs.d
 rm ~/.emacs
 git clone https://github.com/vietanhdev/S-Editor.git ~/.emacs.d
+~~~
+
+For those who don't have git bash on computer:
+
+~~~bash
+rm -rf ~/.emacs.d
+rm ~/.emacs
+wget https://github.com/vietanhdev/S-Editor/archive/master.zip -O emacsd.zip
+unzip emacsd.zip
+cp -R S-Editor-master/* ~/.emacs.d/
 ~~~
 
 # Step 2: Open Emacs and wait for first-time installation
@@ -23,6 +33,8 @@ This step will download and install all the packages and fonts automatically for
 It often takes some minutes to be completed. Please be partient!
 
 # Step 3: Restart Emacs and enjoy!
+
+You can edit some initial settings in `~/.emacs.d/init-settings.el`.
 
 If you have a question or need a hand in setting up this configuration, feel free to contact me:
 
