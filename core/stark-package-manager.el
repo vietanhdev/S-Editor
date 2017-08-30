@@ -39,6 +39,7 @@
     robe
     anaconda-mode
     yaml-mode
+    origami
    )
    
   "List of packages to ensure are installed at launch.")

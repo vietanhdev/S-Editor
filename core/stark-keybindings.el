@@ -82,13 +82,16 @@
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
 
-
 ;; Multiple Cursors
 (global-set-key (kbd "C-x c") 'mc/edit-lines)
 (global-set-key (kbd "C->")  'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")  'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<")  'mc/mark-all-like-this)
 (global-set-key (kbd "C-S-<down-mouse-1>")  'mc/add-cursor-on-click)
+
+;; Code folding
+(global-set-key (kbd "C-c f") 'origami-toggle-node)
+
 
 ;; neotree - Directory View
 (global-set-key (kbd "C-x n o") 'neotree-toggle)

@@ -86,6 +86,7 @@
   (require 'stark-autocomplete)
   (require 'stark-error-checking)
   (require 'stark-multiple-cursors)
+   (require 'stark-code-folding)
   (require 'stark-keybindings)
   (require 'stark-module-init)
   (message "%s" "Loading done!"))
