@@ -1,6 +1,6 @@
-(require 'rvm)
+(stark-require-package 'rvm)
 (rvm-use-default) ;; use rvm's default ruby for the current Emacs session
 
-(require 'robe)
+(stark-require-package 'robe)
 
 (provide 'stark-ruby-mode)

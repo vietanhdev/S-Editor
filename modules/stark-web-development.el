@@ -1,19 +1,19 @@
 ;; Autocomplete / Snippets for Web development
-(require 'emmet-mode)
+(stark-require-package 'emmet-mode)
 (add-hook 'css-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (setq-default emmet-move-cursor-between-quote t)
 
 ;; Display corresponding background color for hex value in html/css
-(require 'rainbow-mode)
+(stark-require-package 'rainbow-mode)
 (add-hook 'html-mode-hook 'rainbow-mode)
 (add-hook 'css-mode-hook 'rainbow-mode)
 
 ;; Javascript
-(require 'js2-mode)
+(stark-require-package 'js2-mode)
 
 ;; Web mode
-(require 'web-mode)
+(stark-require-package 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
@@ -28,9 +28,9 @@
 
 
 ;; Beautify html/css/js
-(require 'web-beautify)
+(stark-require-package 'web-beautify)
 
 ;; Angular 2/4
-(require 'ng2-mode)
+(stark-require-package 'ng2-mode)
 
 (provide 'stark-web-development)

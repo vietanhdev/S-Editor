@@ -28,16 +28,6 @@
     yasnippet
     counsel
     flycheck
-    markdown-mode
-    emmet-mode
-    rainbow-mode
-    js2-mode
-    web-mode
-    web-beautify
-    ng2-mode
-    rvm
-    robe
-    anaconda-mode
     yaml-mode
     origami
    )
