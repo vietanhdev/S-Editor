@@ -13,7 +13,7 @@
 ;; Setup Font
 (defvar stark-ensure-source-code-pro t "Ensure Source Code Pro font is installed.")
 (defvar stark-default-font "Source Code Pro")
-(defvar stark-default-font-height 160)
+(defvar stark-default-font-height 120)
 
 ;; Tab width
 (defvar stark-default-tab-width 4)
