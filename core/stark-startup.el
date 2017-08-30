@@ -12,37 +12,11 @@
 ;; Maximize window on starting
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; Display startup message
-(setq initial-scratch-message "
-
-
-
-
-~~~
-
-▒█▀▀▀█ ▀▀█▀▀ █▀▀█ █▀▀█ █░█ 　 
-░▀▀▀▄▄ ░░█░░ █▄▄█ █▄▄▀ █▀▄ 　 
-▒█▄▄▄█ ░░▀░░ ▀░░▀ ▀░▀▀ ▀░▀ 　 
-
-　 　 　 ▒█▀▀▀ █▀▀▄ ░▀░ ▀▀█▀▀ █▀▀█ █▀▀█ 
-　 　 　 ▒█▀▀▀ █░░█ ▀█▀ ░░█░░ █░░█ █▄▄▀ 
-　 　 　 ▒█▄▄▄ ▀▀▀░ ▀▀▀ ░░▀░░ ▀▀▀▀ ▀░▀▀ 
-
-uǝʎnƃN ɥu∀-ʇǝᴉɅ ʎq uoᴉʇɐɹnƃᴉⅎuoϽ sɔɐɯƎ u∀ - ɹoʇᴉpƎ ʞɹɐʇS
-  
-~~~
-
-#### More Info
-
-  - Contact Page : https://vietanhdev.com/contact/
-  - Contact Email: vietanh@vietanhdev.com
-
-#### For Vietnamese input method:
-
-  - Use C-\\ and type ‘vietnamese-telex‘ / ‘vietnamese-viqr‘ / ‘vietnamese-vni‘
-  - Use C-\\ to toggle input method.
-
-")
+;; Display scratch.md file as startup message
+(add-hook 'emacs-startup-hook
+  (lambda ()
+    (kill-buffer "*scratch*")
+    (find-file-read-only stark-scratch-file)))
 
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'markdown-mode)

@@ -42,6 +42,11 @@
 (defvar stark-default-font-dir (expand-file-name  "SourceCodePro" stark-fonts-dir)
   "Stark default font")
 
+
+;; Scratch file
+(defvar stark-scratch-file (expand-file-name "scratch.md" stark-core-dir)
+  "Scratch message")
+
 ;; ispell path (for word-use checking)
 (defvar stark-ispell-path "/usr/local/bin/ispell")
 
