@@ -46,10 +46,13 @@ The JDEE is an add-on software package that turns Emacs into a comprehensive sys
 Github: [https://github.com/jdee-emacs/jdee](https://github.com/jdee-emacs/jdee)
 
 #### Setup JDEE support:
-    + Build jdee-server ([https://github.com/jdee-emacs/jdee-server](https://github.com/jdee-emacs/jdee-server) 
+
+1. Build jdee-server ([https://github.com/jdee-emacs/jdee-server](https://github.com/jdee-emacs/jdee-server) 
 ) and put it in `~/.emacs.d/jdee-server`.
-    + Uncomment `(require 'stark-jdee-mode)` in `~/.emacs.d/modules/stark-module-init.el`.
-    + Customize jdee-server path in `init-settings.el` JDEE settings in `~/.emacs.d/modules/stark-jdee-mode.el`.
+
+2. Uncomment `(require 'stark-jdee-mode)` in `~/.emacs.d/modules/stark-module-init.el`.
+
+3. Customize jdee-server path in `init-settings.el` JDEE settings in `~/.emacs.d/modules/stark-jdee-mode.el`.
 
 
 [vietanhdev.com - contact page](https://vietanhdev.com/contact/).
