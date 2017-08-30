@@ -6,7 +6,7 @@ This is a new configuration for Emacs focusing on light weight and highly custom
 
 ## Quick Install Guide
 
-# Step 1: Clone Git repository
+### Step 1: Clone Git repository
 
 Open Terminal, type:
 
@@ -27,17 +27,30 @@ mkdir ~/.emacs.d
 cp -R S-Editor-master/* ~/.emacs.d/
 ~~~
 
-# Step 2: Open Emacs and wait for first-time installation
+### Step 2: Open Emacs and wait for first-time installation
 
 This step will download and install all the packages and fonts automatically for you.
 
 It often takes some minutes to be completed. Please be partient!
 
-# Step 3: Restart Emacs and enjoy!
+### Step 3: Restart Emacs and enjoy!
 
 You can edit some initial settings in `~/.emacs.d/init-settings.el`.
 
 If you have a question or need a hand in setting up this configuration, feel free to contact me:
+
+### Setup JDEE for Java development
+
+The JDEE is an add-on software package that turns Emacs into a comprehensive system for creating, editing, debugging, and documenting Java applications.
+
+Github: [https://github.com/jdee-emacs/jdee](https://github.com/jdee-emacs/jdee)
+
+#### Setup JDEE support:
+    + Build jdee-server ([https://github.com/jdee-emacs/jdee-server](https://github.com/jdee-emacs/jdee-server) 
+) and put it in `~/.emacs.d/jdee-server`.
+    + Uncomment `(require 'stark-jdee-mode)` in `~/.emacs.d/modules/stark-module-init.el`.
+    + Customize jdee-server path in `init-settings.el` JDEE settings in `~/.emacs.d/modules/stark-jdee-mode.el`.
+
 
 [vietanhdev.com - contact page](https://vietanhdev.com/contact/).
 

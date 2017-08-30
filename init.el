@@ -47,8 +47,6 @@
 (defvar stark-scratch-file (expand-file-name "scratch.md" stark-core-dir)
   "Scratch message")
 
-;; ispell path (for word-use checking)
-(defvar stark-ispell-path "/usr/local/bin/ispell")
 
 ;; User custom configuration file
 (defvar stark-custom-file (expand-file-name  "custom.el" stark-dir)

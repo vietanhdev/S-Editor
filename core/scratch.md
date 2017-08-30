@@ -11,11 +11,8 @@
 uǝʎnƃN ɥu∀-ʇǝᴉɅ ʎq uoᴉʇɐɹnƃᴉⅎuoϽ sɔɐɯƎ u∀ - ɹoʇᴉpƎ ʞɹɐʇS
   
 ~~~
-
-## More Info
-
-  - Contact Page : https://vietanhdev.com/contact/
-  - Contact Email: vietanh@vietanhdev.com
+* Contact Page : https://vietanhdev.com/contact/
+* Contact Email: vietanh@vietanhdev.com
 
 ## Some keybindings
 

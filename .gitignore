@@ -9,5 +9,6 @@ recent*
 elpa
 Tramp
 anaconda-mode
+jdee-server/*
 .mc-lists.el
 .swp
