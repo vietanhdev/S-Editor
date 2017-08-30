@@ -39,6 +39,8 @@ You can edit some initial settings in `~/.emacs.d/init-settings.el`.
 
 If you have a question or need a hand in setting up this configuration, feel free to contact me:
 
+[vietanhdev.com - contact page](https://vietanhdev.com/contact/).
+
 ### Setup JDEE for Java development
 
 The JDEE is an add-on software package that turns Emacs into a comprehensive system for creating, editing, debugging, and documenting Java applications.
@@ -53,9 +55,6 @@ Github: [https://github.com/jdee-emacs/jdee](https://github.com/jdee-emacs/jdee)
 2. Uncomment `(require 'stark-jdee-mode)` in `~/.emacs.d/modules/stark-module-init.el`.
 
 3. Customize jdee-server path in `init-settings.el` JDEE settings in `~/.emacs.d/modules/stark-jdee-mode.el`.
-
-
-[vietanhdev.com - contact page](https://vietanhdev.com/contact/).
 
 ## For Vietnamese input method:
 
