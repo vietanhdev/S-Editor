@@ -12,3 +12,4 @@ anaconda-mode
 jdee-server/*
 .mc-lists.el
 .swp
+irony/*

@@ -14,9 +14,12 @@
 
 ;; Display scratch.md file as startup message
 (add-hook 'emacs-startup-hook
-  (lambda ()
-    (kill-buffer "*scratch*")
-    (find-file-read-only stark-scratch-file)))
+          (lambda ()
+            (defvar init-working-dir default-directory) ;; save init. working dir
+            (kill-buffer "*scratch*")
+            (find-file-read-only stark-scratch-file)
+            (cd init-working-dir))) ;; restore init. working dir.
+
 
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'markdown-mode)

@@ -16,7 +16,7 @@
 (defvar stark-default-font-height 160)
 
 ;; Tab width
-(defvar stark-default-tab-width 4)
+(defvar stark-default-tab-width 2)
 
 ;; NyanCat - active Nyan cat on the modeline
 (defvar stark-active-nyan-cat nil)

@@ -38,8 +38,7 @@
 
 
 ;; Load editor theme
-(require 'dracula-theme)
-(load-theme 'dracula t)
+(load-theme stark-theme t)
 
 ;; Display line number when programming
 (add-hook 'prog-mode-hook 'linum-mode)

@@ -1,4 +1,4 @@
-(require 'stark-semantic)
+;(require 'stark-semantic)
 (require 'stark-cc-mode)
 ;;(require 'stark-jdee-mode)
 (require 'stark-markdown-mode)

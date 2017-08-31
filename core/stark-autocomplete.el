@@ -13,7 +13,6 @@
 (setq autopair-autowrap t)
 (autopair-global-mode 1)
 
-
 ;; Autocomplete
 (require 'company)
 (global-company-mode t)

@@ -53,23 +53,23 @@
   "User custom file")
 
 
-
-(defun stark-add-subfolders-to-load-path (parent-dir)
- "Add all level PARENT-DIR subdirs to the `load-path'."
+(defun add-subfolders-to-load (parent-dir load-list)
+ "Add all level PARENT-DIR subdirs to the load path."
  (dolist (f (directory-files parent-dir))
    (let ((name (expand-file-name f parent-dir)))
      (when (and (file-directory-p name)
                 (not (string-prefix-p "." f)))
-       (add-to-list 'load-path name)
-       (stark-add-subfolders-to-load-path name)))))
+       (add-to-list load-list name)
+       (add-subfolders-to-load name load-list)))))
 
-;; add Stark's directories to Emacs's `load-path'
+
+;; add Stark's directories to Emacs
 (load (concat stark-dir "init-settings.el"))
 (add-to-list 'load-path stark-core-dir)
-(stark-add-subfolders-to-load-path stark-core-dir)
+(add-subfolders-to-load stark-core-dir 'load-path)
 (add-to-list 'load-path stark-modules-dir)
-(stark-add-subfolders-to-load-path stark-modules-dir)
-(stark-add-subfolders-to-load-path stark-themes-dir)
+(add-subfolders-to-load stark-modules-dir 'load-path)
+(add-subfolders-to-load stark-themes-dir 'custom-theme-load-path)
 
 
 ;; Load settings file
