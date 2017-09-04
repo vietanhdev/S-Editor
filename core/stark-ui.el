@@ -23,9 +23,11 @@
 ;; Smooth Scrolling and attractive mode (look like Sublime Text)
 ;; From 'sublimity' package
 (require 'sublimity-scroll)
-;; (require 'sublimity-map) ;; experimental
+;(require 'sublimity-map) ;; experimental
 (require 'sublimity-attractive)
 (sublimity-mode 1)
+
+
 
 ;; Word wrap
 (global-visual-line-mode t)
