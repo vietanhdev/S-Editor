@@ -25,7 +25,7 @@
 (require 'sublimity-scroll)
 ;(require 'sublimity-map) ;; experimental
 (require 'sublimity-attractive)
-(sublimity-mode 1)
+;(sublimity-mode 1)
 
 
 
