@@ -15,13 +15,11 @@
 ;; Display scratch.md file as startup message
 (add-hook 'emacs-startup-hook
           (lambda ()
-            
-
-           (when (get-buffer-window "*scratch*" 'visible)
-              (defvar init-working-dir default-directory) ;; save init. working dir.
-              (find-file-read-only stark-scratch-file)
-              (cd init-working-dir)))
-          (kill-buffer "*scratch*")) ;; restore init. working dir.
+             (when (equal (buffer-name) "*scratch*")
+               (defvar init-working-dir default-directory) ;; save init. working dir.
+               (find-file-read-only stark-scratch-file)
+               (cd init-working-dir)) ;; restore init. working dir.
+              (kill-buffer "*scratch*"))) 
 
 
 (setq inhibit-startup-message t)
