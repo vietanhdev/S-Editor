@@ -14,3 +14,4 @@ jdee-server/*
 .swp
 irony/*
 session*
+semanticdb/*
