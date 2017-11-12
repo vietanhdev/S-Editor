@@ -1,0 +1,906 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables
+  (list
+    (semanticdb-table "btree.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bt.h" include nil nil [948 963])
+            ("btcls" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [982 988]))                  
+                :type "int")
+                nil [965 989])
+            ("btcrt" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1008 1015])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1019])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1020 1024]))                  
+                :type ("BTA" type (:type "class") nil nil))
+                nil [990 1025])
+            ("btchgr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1044 1050])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1050 1057]))                  
+                :type "int")
+                nil [1026 1058])
+            ("btcrtr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1077 1083])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1083 1090]))                  
+                :type "int")
+                nil [1059 1091])
+            ("btdups" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1110 1116])
+                    ("" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1116 1122]))                  
+                :type "int")
+                nil [1092 1123])
+            ("btinit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1142 1147]))                  
+                :type "int")
+                nil [1124 1148])
+            ("btopn" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1167 1174])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1174 1178])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1178 1182]))                  
+                :type ("BTA" type (:type "class") nil nil))
+                nil [1149 1183])
+            ("bdbug" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1201 1207])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1207 1214])
+                    ("" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1214 1220]))                  
+                :type "int")
+                nil [1184 1221])
+            ("bfndky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1240 1246])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1246 1253])
+                    ("" variable
+                       (:pointer 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1253 1261]))                  
+                :type "int")
+                nil [1222 1262])
+            ("binsky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1287])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1287 1294])
+                    ("" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1294 1300]))                  
+                :type "int")
+                nil [1263 1301])
+            ("bnxtky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1320 1326])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1326 1333])
+                    ("" variable
+                       (:pointer 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1333 1341]))                  
+                :type "int")
+                nil [1302 1342])
+            ("bprvky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1361 1367])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1367 1374])
+                    ("" variable
+                       (:pointer 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1374 1382]))                  
+                :type "int")
+                nil [1343 1383])
+            ("bdelky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1402 1408])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1408 1415]))                  
+                :type "int")
+                nil [1384 1416])
+            ("btdelr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1435 1440])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1440 1447]))                  
+                :type "int")
+                nil [1417 1448])
+            ("btcerr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1468 1474])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1474 1480])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1480 1487])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1487 1494]))                  
+                :type "void")
+                nil [1449 1495])
+            ("bupdky" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1514 1520])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1520 1527])
+                    ("" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1527 1533]))                  
+                :type "int")
+                nil [1496 1534])
+            ("btins" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1553 1559])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1559 1566])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1566 1573])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1573 1577]))                  
+                :type "int")
+                nil [1536 1578])
+            ("btsel" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1596 1602])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1602 1609])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1616])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1616 1620])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1620 1626]))                  
+                :type "int")
+                nil [1579 1627])
+            ("btupd" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1645 1651])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1651 1658])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1658 1665])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1665 1669]))                  
+                :type "int")
+                nil [1628 1670])
+            ("btdel" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1688 1694])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1694 1701]))                  
+                :type "int")
+                nil [1671 1702])
+            ("btseln" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1721 1727])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1727 1734])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1734 1741])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1741 1745])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1745 1751]))                  
+                :type "int")
+                nil [1703 1752])
+            ("btselp" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1771 1777])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1777 1784])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1784 1791])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1791 1795])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1795 1801]))                  
+                :type "int")
+                nil [1753 1802])
+            ("btrecs" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1821 1827])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1827 1834])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1834 1840]))                  
+                :type "int")
+                nil [1803 1841])
+            ("btlock" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1861 1867]))                  
+                :type "int")
+                nil [1843 1868])
+            ("btunlock" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1889 1895]))                  
+                :type "int")
+                nil [1869 1896])
+            ("btpos" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1915 1921])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1921 1925]))                  
+                :type "int")
+                nil [1898 1926])
+            ("btthresh" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("BTA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1947 1952])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1953 1957]))                  
+                :type "int")
+                nil [1927 1958]))          
+      :file "btree.h"
+      :pointmax 1971
+      :fsize 1970
+      :lastmodtime '(23023 63634 473434 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "bt.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_btheader_" variable (:constant-flag t) nil [945 955])
+            ("stdio.h" include (:system-flag t) nil [956 974])
+            ("bc.h" include nil nil [976 991])
+            ("bt_cntrl" type
+               (:members 
+                  ( ("inmem" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1053 1065])
+                    ("busy" variable (:type "int") (reparse-symbol classsubparts) [1113 1122])
+                    ("writes" variable (:type "int") (reparse-symbol classsubparts) [1179 1190])
+                    ("lrunxt" variable (:type "int") (reparse-symbol classsubparts) [1244 1255]))                  
+                :type "struct")
+                nil [1032 1309])
+            ("CNTRL" type
+               (:typedef ("bt_cntrl" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1311 1341])
+            ("bt_lru" type
+               (:members 
+                  ( ("lrut" variable (:type "int") (reparse-symbol classsubparts) [1413 1422])
+                    ("lruh" variable (:type "int") (reparse-symbol classsubparts) [1427 1436]))                  
+                :type "struct")
+                nil [1393 1439])
+            ("bt_keyent" type
+               (:members 
+                  ( ("key" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1864 1881])
+                    ("val" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1886 1896])
+                    ("dup" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1901 1911]))                  
+                :type "struct")
+                nil [1841 1914])
+            ("KEYENT" type
+               (:typedef ("bt_keyent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1916 1948])
+            ("bt_memrec" type
+               (:members 
+                  ( ("infblk" variable
+                       (:dereference 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1977 1998])
+                    ("keyblk" variable
+                       (:dereference 1
+                        :type ("KEYENT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2003 2025])
+                    ("lnkblk" variable
+                       (:dereference 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2030 2053]))                  
+                :type "struct")
+                nil [1954 2101])
+            ("MEMREC" type
+               (:typedef ("bt_memrec" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2103 2135])
+            ("bt_datblk" type
+               (:members 
+                  ( ("infblk" variable
+                       (:dereference 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2201 2222])
+                    ("data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2227 2259]))                  
+                :type "struct")
+                nil [2178 2262])
+            ("DATBLK" type
+               (:typedef ("bt_datblk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2264 2296])
+            ("bt_dkey" type
+               (:members 
+                  ( ("key" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2364 2381])
+                    ("deleted" variable (:type "int") (reparse-symbol classsubparts) [2386 2398])
+                    ("val" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2403 2413])
+                    ("flink" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2418 2430])
+                    ("blink" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2435 2447]))                  
+                :type "struct")
+                nil [2343 2450])
+            ("DKEY" type
+               (:typedef ("bt_dkey" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2452 2480])
+            ("bt_lf" type
+               (:members 
+                  ( ("lfkey" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2541 2560])
+                    ("lfblk" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2565 2577])
+                    ("lfpos" variable (:type "int") (reparse-symbol classsubparts) [2582 2592])
+                    ("lfexct" variable (:type "int") (reparse-symbol classsubparts) [2597 2608])
+                    ("draddr" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2613 2626]))                  
+                :type "struct")
+                nil [2522 2629])
+            ("bt_stats" type
+               (:members 
+                  ( ("xlogrd" variable (:type "int") (reparse-symbol classsubparts) [2686 2697])
+                    ("xlogwr" variable (:type "int") (reparse-symbol classsubparts) [2702 2713])
+                    ("xphyrd" variable (:type "int") (reparse-symbol classsubparts) [2718 2729])
+                    ("xphywr" variable (:type "int") (reparse-symbol classsubparts) [2734 2745])
+                    ("xsplit" variable (:type "int") (reparse-symbol classsubparts) [2750 2761])
+                    ("xjoin" variable (:type "int") (reparse-symbol classsubparts) [2766 2776])
+                    ("xbal" variable (:type "int") (reparse-symbol classsubparts) [2781 2790])
+                    ("xgot" variable (:type "int") (reparse-symbol classsubparts) [2795 2804])
+                    ("xrel" variable (:type "int") (reparse-symbol classsubparts) [2809 2818]))                  
+                :type "struct")
+                nil [2664 2821])
+            ("STATS" type
+               (:typedef ("bt_stats" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2823 2853])
+            ("STKMAX" variable (:constant-flag t) nil [2884 2890])
+            ("bt_stk" type
+               (:members 
+                  ( ("stkptr" variable (:type "int") (reparse-symbol classsubparts) [2915 2926])
+                    ("stk" variable
+                       (:dereference 1
+                        :type ("BTint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2931 2949]))                  
+                :type "struct")
+                nil [2895 2952])
+            ("bt_super" type
+               (:members 
+                  ( ("sblkmx" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3033 3046])
+                    ("snfree" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3051 3064])
+                    ("sfreep" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3069 3082])
+                    ("scroot" variable (:type ("BTint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3087 3100])
+                    ("smode" variable (:type "int") (reparse-symbol classsubparts) [3105 3115])
+                    ("smod" variable (:type "int") (reparse-symbol classsubparts) [3120 3129])
+                    ("scclas" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3134 3154]))                  
+                :type "struct")
+                nil [3011 3157])
+            ("bt_cntxt" type
+               (:members 
+                  ( ("lru" variable (:type ("bt_lru" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3246 3264])
+                    ("lf" variable (:type ("bt_lf" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3269 3285])
+                    ("stk" variable (:type ("bt_stk" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3290 3308])
+                    ("stat" variable (:type ("bt_stats" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3313 3334])
+                    ("super" variable (:type ("bt_super" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3339 3361]))                  
+                :type "struct")
+                nil [3224 3364])
+            ("CNTXT" type
+               (:typedef ("bt_cntxt" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3366 3396])
+            ("FIDSZ" variable (:constant-flag t) nil [3406 3411])
+            ("bt_active" type
+               (:members 
+                  ( ("idxunt" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3439 3452])
+                    ("idxfid" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3457 3476])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [3481 3488])
+                    ("lckcnt" variable (:type "int") (reparse-symbol classsubparts) [3550 3561])
+                    ("shared" variable (:type "int") (reparse-symbol classsubparts) [3606 3617])
+                    ("wt_threshold" variable (:type "int") (reparse-symbol classsubparts) [3622 3639])
+                    ("cntrl" variable
+                       (:pointer 1
+                        :type ("CNTRL" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3680 3693])
+                    ("memrec" variable
+                       (:pointer 1
+                        :type ("MEMREC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3698 3713])
+                    ("cntxt" variable
+                       (:pointer 1
+                        :type ("CNTXT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3718 3731]))                  
+                :type "struct")
+                nil [3416 3734])
+            ("BTA" type
+               (:typedef ("bt_active" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3736 3765])
+            ("btat" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("BTA" type (:type "class") nil nil))
+                nil [3767 3785])
+            ("btact" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("BTA" type (:type "class") nil nil))
+                nil [3917 3935]))          
+      :file "bt.h"
+      :pointmax 3994
+      :fsize 3993
+      :lastmodtime '(23023 63634 473010 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_btheader_")
+          ("STKMAX" . ((number "40" 2891 . 2893)))
+          ("FIDSZ" . ((number "72" 3412 . 3414)))
+          )
+)
+    (semanticdb-table "bc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_btconst_" variable (:constant-flag t) nil [919 928])
+            ("limits.h" include (:system-flag t) nil [930 949])
+            ("BTint" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1217 1235])
+            ("BTINT_MAX" variable (:constant-flag t) nil [1244 1253])
+            ("ZXFMT" variable (:constant-flag t) nil [1270 1275])
+            ("Z20DFMT" variable (:constant-flag t) nil [1289 1296])
+            ("ZINTFMT" variable (:constant-flag t) nil [1312 1319])
+            ("DEBUG" variable (:constant-flag t) nil [1341 1346])
+            ("TRUE" variable (:constant-flag t) nil [1358 1362])
+            ("FALSE" variable (:constant-flag t) nil [1373 1378])
+            ("LFSHDR" variable (:constant-flag t) nil [1390 1396])
+            ("ZBYTEW" variable (:constant-flag t) nil [1477 1483])
+            ("ZBPW" variable (:constant-flag t) nil [1577 1581])
+            ("ZKYLEN" variable (:constant-flag t) nil [1632 1638])
+            ("ZMXBLK" variable (:constant-flag t) nil [1903 1909])
+            ("ZBLKSZ" variable (:constant-flag t) nil [1968 1974])
+            ("ZMXKEY" variable (:constant-flag t) nil [2027 2033])
+            ("ZPAD" variable (:constant-flag t) nil [2124 2128])
+            ("ZTHRES" variable (:constant-flag t) nil [2229 2235])
+            ("ZMXACT" variable (:constant-flag t) nil [2303 2309])
+            ("ZSLEEP" variable (:constant-flag t) nil [2378 2384])
+            ("ZRNAMESZ" variable (:constant-flag t) nil [2423 2431])
+            ("ZMSGSZ" variable (:constant-flag t) nil [2443 2449])
+            ("ZVERS" variable (:constant-flag t) nil [3050 3055])
+            ("ZBTYPE" variable (:constant-flag t) nil [3118 3124])
+            ("ZBTVER" variable (:constant-flag t) nil [3135 3141])
+            ("ZMISC" variable (:constant-flag t) nil [3153 3158])
+            ("ZNXBLK" variable (:constant-flag t) nil [3170 3176])
+            ("ZNKEYS" variable (:constant-flag t) nil [3187 3193])
+            ("ZNBLKS" variable (:constant-flag t) nil [3204 3210])
+            ("ZNXDUP" variable (:constant-flag t) nil [3221 3227])
+            ("ZSTART" variable (:constant-flag t) nil [3265 3271])
+            ("ZEND" variable (:constant-flag t) nil [3282 3286])
+            ("ZINFSZ" variable (:constant-flag t) nil [3324 3330])
+            ("ZROOT" variable (:constant-flag t) nil [3367 3372])
+            ("ZINUSE" variable (:constant-flag t) nil [3409 3415])
+            ("ZFREE" variable (:constant-flag t) nil [3451 3456])
+            ("ZDATA" variable (:constant-flag t) nil [3492 3497])
+            ("ZDUP" variable (:constant-flag t) nil [3544 3548])
+            ("ZSUPER" variable (:constant-flag t) nil [3600 3606])
+            ("ZNULL" variable (:constant-flag t) nil [3642 3647])
+            ("ZDRSZ" variable (:constant-flag t) nil [4141 4146])
+            ("ZDOVRH" variable (:constant-flag t) nil [4157 4163])
+            ("ZDSGMN" variable (:constant-flag t) nil [4236 4242])
+            ("ZPREV" variable (:constant-flag t) nil [4292 4297])
+            ("ZNEXT" variable (:constant-flag t) nil [4308 4313])
+            ("QBLKNR" variable (:constant-flag t) nil [4690 4696])
+            ("QCLSIO" variable (:constant-flag t) nil [4709 4715])
+            ("QCRTIO" variable (:constant-flag t) nil [4728 4734])
+            ("QCPBLK" variable (:constant-flag t) nil [4747 4753])
+            ("QWRBLK" variable (:constant-flag t) nil [4767 4773])
+            ("QRDSUP" variable (:constant-flag t) nil [4786 4792])
+            ("QWRSUP" variable (:constant-flag t) nil [4805 4811])
+            ("QOPNIO" variable (:constant-flag t) nil [4824 4830])
+            ("QRDBLK" variable (:constant-flag t) nil [4844 4850])
+            ("QIXOPN" variable (:constant-flag t) nil [4863 4869])
+            ("QSPLIT" variable (:constant-flag t) nil [4882 4888])
+            ("QINFER" variable (:constant-flag t) nil [4901 4907])
+            ("QNOMEM" variable (:constant-flag t) nil [4921 4927])
+            ("QSTKUF" variable (:constant-flag t) nil [4940 4946])
+            ("QSTKOF" variable (:constant-flag t) nil [4959 4965])
+            ("QBLKFL" variable (:constant-flag t) nil [4978 4984])
+            ("QLOCTB" variable (:constant-flag t) nil [4998 5004])
+            ("QSPKEY" variable (:constant-flag t) nil [5017 5023])
+            ("QWRMEM" variable (:constant-flag t) nil [5036 5042])
+            ("QBALSE" variable (:constant-flag t) nil [5055 5061])
+            ("QDELEX" variable (:constant-flag t) nil [5075 5081])
+            ("QDELER" variable (:constant-flag t) nil [5094 5100])
+            ("QDELRP" variable (:constant-flag t) nil [5113 5119])
+            ("QDEMSE" variable (:constant-flag t) nil [5132 5138])
+            ("QDEMSP" variable (:constant-flag t) nil [5152 5158])
+            ("QJNSE" variable (:constant-flag t) nil [5171 5176])
+            ("QNODEF" variable (:constant-flag t) nil [5190 5196])
+            ("QDELCR" variable (:constant-flag t) nil [5209 5215])
+            ("QBADIX" variable (:constant-flag t) nil [5229 5235])
+            ("QNOBTF" variable (:constant-flag t) nil [5248 5254])
+            ("QINERR" variable (:constant-flag t) nil [5267 5273])
+            ("QBADOP" variable (:constant-flag t) nil [5286 5292])
+            ("QNOACT" variable (:constant-flag t) nil [5306 5312])
+            ("QBADAP" variable (:constant-flag t) nil [5325 5331])
+            ("QBUSY" variable (:constant-flag t) nil [5344 5349])
+            ("QNOTOP" variable (:constant-flag t) nil [5363 5369])
+            ("QNOBLK" variable (:constant-flag t) nil [5404 5410])
+            ("QNEGSZ" variable (:constant-flag t) nil [5423 5429])
+            ("QNOTDA" variable (:constant-flag t) nil [5442 5448])
+            ("QBADCTXT" variable (:constant-flag t) nil [5461 5469])
+            ("QDLOOP" variable (:constant-flag t) nil [5483 5489])
+            ("QUNLCK" variable (:constant-flag t) nil [5502 5508])
+            ("QLRUER" variable (:constant-flag t) nil [5521 5527])
+            ("QDAERR" variable (:constant-flag t) nil [5540 5546])
+            ("QDNEG" variable (:constant-flag t) nil [5560 5565])
+            ("QDUP" variable (:constant-flag t) nil [5579 5583])
+            ("QNOKEY" variable (:constant-flag t) nil [5598 5604])
+            ("QNOWRT" variable (:constant-flag t) nil [5617 5623])
+            ("QNOTFR" variable (:constant-flag t) nil [5637 5643])
+            ("QBADVR" variable (:constant-flag t) nil [5656 5662])
+            ("QDAOVR" variable (:constant-flag t) nil [5675 5681])
+            ("QF2BIG" variable (:constant-flag t) nil [5694 5700])
+            ("QBADAL" variable (:constant-flag t) nil [5714 5720])
+            ("QDRANEG" variable (:constant-flag t) nil [5733 5740])
+            ("QBLKSZERR" variable (:constant-flag t) nil [5753 5762])
+            ("QNODUPS" variable (:constant-flag t) nil [5774 5781])
+            ("QPOSERR" variable (:constant-flag t) nil [5794 5801])
+            ("QNOT64BIT" variable (:constant-flag t) nil [5814 5823])
+            ("Q64BIT" variable (:constant-flag t) nil [5835 5841])
+            ("QNOTDUP" variable (:constant-flag t) nil [5854 5861])
+            ("QDUPSZ" variable (:constant-flag t) nil [5873 5879])
+            ("QBADIR" variable (:constant-flag t) nil [5891 5897]))          
+      :file "bc.h"
+      :pointmax 5925
+      :fsize 5924
+      :lastmodtime '(23023 63634 472832 0)
+      :unmatched-syntax '((symbol 4639 . 4651) (number "3" 4632 . 4638) (symbol 4628 . 4631) (semantic-list "((ZBLKSZ-ZBPW-ZINFSZ*ZBPW)/(ZKYLEN+(3*ZBPW)))" 4621 . 4627) (symbol 4618 . 4620) (symbol 4607 . 4617) (symbol 4601 . 4606) (punctuation 4600 . 4601))
+      :lexical-table 
+        '(("LFSHDR" . ((number "0xFFBADDEF" 1397 . 1407)))
+          ("ZKYLEN" . ((number "32" 1639 . 1641)))
+          ("ZNULL" . ((punctuation "-" 3648 . 3649) (number "1" 3649 . 3650)))
+          ("QBADIX" . ((number "29" 5237 . 5239)))
+          ("QNOTDA" . ((number "39" 5450 . 5452)))
+          ("QLRUER" . ((number "43" 5529 . 5531)))
+          ("ZNXBLK" . ((number "2" 3177 . 3178)))
+          ("ZDOVRH" . ((semantic-list "(ZDRSZ+ZBPW)" 4165 . 4177)))
+          ("QBLKFL" . ((number "16" 4986 . 4988)))
+          ("QSPKEY" . ((number "18" 5025 . 5027)))
+          ("QNOACT" . ((number "33" 5314 . 5316)))
+          ("QDUP" . ((number "46" 5587 . 5589)))
+          ("QF2BIG" . ((number "52" 5702 . 5704)))
+          ("TRUE" . ((number "1" 1363 . 1364)))
+          ("ZBYTEW" . ((number "8" 1484 . 1485)))
+          ("ZSLEEP" . ((number "5" 2385 . 2386)))
+          ("ZFREE" . ((number "3" 3457 . 3458)))
+          ("QNOBLK" . ((number "37" 5412 . 5414)))
+          ("QBLKSZERR" . ((number "55" 5763 . 5765)))
+          ("ZXFMT" . ((string "\"%x\"" 1276 . 1280)))
+          ("FALSE" . ((number "0" 1379 . 1380)))
+          ("ZPREV" . ((number "1" 4298 . 4299)))
+          ("QRDBLK" . ((number "9" 4853 . 4854)))
+          ("QSTKOF" . ((number "15" 4967 . 4969)))
+          ("QBADAL" . ((number "53" 5722 . 5724)))
+          ("QPOSERR" . ((number "57" 5802 . 5804)))
+          ("ZTHRES" . ((number "3" 2236 . 2237)))
+          ("ZSTART" . ((number "1" 3272 . 3273)))
+          ("ZDSGMN" . ((number "7" 4243 . 4244)))
+          ("ZNEXT" . ((number "2" 4314 . 4315)))
+          ("QSPLIT" . ((number "11" 4890 . 4892)))
+          ("QNOMEM" . ((number "13" 4929 . 4931)))
+          ("QDNEG" . ((number "45" 5568 . 5570)))
+          ("ZBLKSZ" . ((number "1024" 1975 . 1979)))
+          ("ZBTYPE" . ((number "0" 3125 . 3126)))
+          ("ZDATA" . ((number "4" 3498 . 3499)))
+          ("QBLKNR" . ((number "1" 4699 . 4700)))
+          ("QOPNIO" . ((number "8" 4833 . 4834)))
+          ("QBALSE" . ((number "20" 5063 . 5065)))
+          ("QDELEX" . ((number "21" 5083 . 5085)))
+          ("QNODUPS" . ((number "56" 5782 . 5784)))
+          ("BTINT_MAX" . ((symbol "INT_MAX" 1254 . 1261)))
+          ("ZVERS" . ((number "0x5" 3056 . 3059)))
+          ("ZROOT" . ((number "1" 3373 . 3374)))
+          ("ZINUSE" . ((number "2" 3416 . 3417)))
+          ("QWRBLK" . ((number "5" 4776 . 4777)))
+          ("QRDSUP" . ((number "6" 4795 . 4796)))
+          ("QDELCR" . ((number "28" 5217 . 5219)))
+          ("Z20DFMT" . ((string "\"%20d\"" 1297 . 1303)))
+          ("ZMXKEY" . ((semantic-list "((ZBLKSZ-ZBPW-ZINFSZ*ZBPW)/(ZKYLEN+(3*ZBPW)))" 2034 . 2079)))
+          ("ZPAD" . ((semantic-list "((ZBLKSZ-(ZKYLEN+(3*ZBPW))*ZMXKEY-ZBPW-ZINFSZ*ZBPW)/ZBPW)" 2129 . 2186)))
+          ("ZMISC" . ((number "1" 3160 . 3161)))
+          ("QLOCTB" . ((number "17" 5006 . 5008)))
+          ("QNODEF" . ((number "27" 5198 . 5200)))
+          ("QBADAP" . ((number "34" 5333 . 5335)))
+          ("QBADCTXT" . ((number "40" 5471 . 5473)))
+          ("QUNLCK" . ((number "42" 5510 . 5512)))
+          ("QBADVR" . ((number "50" 5664 . 5666)))
+          ("Q64BIT" . ((number "59" 5842 . 5844)))
+          ("QBADIR" . ((number "61" 5898 . 5900)))
+          ("_btconst_")
+          ("ZINTFMT" . ((string "\"%d\"" 1320 . 1324)))
+          ("ZSUPER" . ((number "0" 3607 . 3608)))
+          ("QINFER" . ((number "12" 4909 . 4911)))
+          ("QSTKUF" . ((number "14" 4948 . 4950)))
+          ("QWRMEM" . ((number "19" 5044 . 5046)))
+          ("QNOBTF" . ((number "30" 5256 . 5258)))
+          ("QBUSY" . ((number "35" 5352 . 5354)))
+          ("QNEGSZ" . ((number "38" 5431 . 5433)))
+          ("QDAOVR" . ((number "51" 5683 . 5685)))
+          ("QDRANEG" . ((number "54" 5741 . 5743)))
+          ("ZMSGSZ" . ((number "132" 2450 . 2453)))
+          ("ZNBLKS" . ((number "4" 3211 . 3212)))
+          ("ZINFSZ" . ((number "6" 3331 . 3332)))
+          ("QCPBLK" . ((number "4" 4756 . 4757)))
+          ("QWRSUP" . ((number "7" 4814 . 4815)))
+          ("QDEMSP" . ((number "25" 5160 . 5162)))
+          ("QNOTOP" . ((number "36" 5371 . 5373)))
+          ("QDLOOP" . ((number "41" 5491 . 5493)))
+          ("DEBUG" . ((number "0" 1347 . 1348)))
+          ("ZBPW" . ((number "4" 1582 . 1583)))
+          ("ZMXACT" . ((number "5" 2310 . 2311)))
+          ("ZBTVER" . ((punctuation "-" 3142 . 3143) (number "1" 3143 . 3144)))
+          ("ZNKEYS" . ((number "3" 3194 . 3195)))
+          ("ZDUP" . ((number "5" 3549 . 3550)))
+          ("QCLSIO" . ((number "2" 4718 . 4719)))
+          ("QDELRP" . ((number "23" 5121 . 5123)))
+          ("QBADOP" . ((number "32" 5294 . 5296)))
+          ("QDAERR" . ((number "44" 5548 . 5550)))
+          ("QNOWRT" . ((number "48" 5625 . 5627)))
+          ("QNOTFR" . ((number "49" 5645 . 5647)))
+          ("QNOT64BIT" . ((number "58" 5824 . 5826)))
+          ("QNOTDUP" . ((number "60" 5862 . 5864)))
+          ("QDUPSZ" . ((number "61" 5880 . 5882)))
+          ("ZMXBLK" . ((number "3" 1911 . 1912)))
+          ("ZRNAMESZ" . ((number "16" 2432 . 2434)))
+          ("ZDRSZ" . ((number "2" 4147 . 4148)))
+          ("QIXOPN" . ((number "10" 4871 . 4873)))
+          ("QDEMSE" . ((number "24" 5140 . 5142)))
+          ("QJNSE" . ((number "26" 5179 . 5181)))
+          ("QNOKEY" . ((number "47" 5606 . 5608)))
+          ("ZNXDUP" . ((number "5" 3228 . 3229)))
+          ("ZEND" . ((number "2" 3287 . 3288)))
+          ("QCRTIO" . ((number "3" 4737 . 4738)))
+          ("QDELER" . ((number "22" 5102 . 5104)))
+          ("QINERR" . ((number "31" 5275 . 5277)))
+          )
+))
+  :file "!media!vietanhdev!DATA!Workspace!PhoneBook!lib!btree!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

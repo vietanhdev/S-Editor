@@ -1,0 +1,130 @@
+;; Object PhoneBook/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PhoneBook/"
+  :tables
+  (list
+    (semanticdb-table "func.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("lib/btree/inc/btree.h" include nil nil [60 92])
+            ("lib/libfdr/dllist.h" include nil nil [93 123])
+            ("lib/libfdr/jrb.h" include nil nil [124 151])
+            ("lib/v/v_io.h" include nil nil [152 175])
+            ("lib/v/v_string.h" include nil nil [176 203])
+            ("main.h" include nil nil [204 221])
+            ("func.h" include nil nil [222 239])
+            ("sayGoodbye" function (:type "void") nil [242 356])
+            ("make_contact_list" function
+               (:arguments 
+                  ( ("contact_list" variable
+                       (:pointer 1
+                        :type ("Dllist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [381 403]))                  
+                :type "void")
+                nil [358 446])
+            ("add_contact" function
+               (:arguments 
+                  ( ("contact" variable (:type ("contact_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [464 482]))                  
+                :type "int")
+                nil [448 516]))          
+      :file "func.c"
+      :pointmax 519
+      :fsize 518
+      :lastmodtime '(23031 9617 378325 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("lib/btree/inc/btree.h" include nil nil [60 92])
+            ("lib/libfdr/jrb.h" include nil nil [93 120])
+            ("lib/libfdr/dllist.h" include nil nil [121 151])
+            ("lib/v/v_io.h" include nil nil [152 175])
+            ("lib/v/v_string.h" include nil nil [176 203])
+            ("main.h" include nil nil [204 221])
+            ("func.h" include nil nil [222 239])
+            ("g_contact_list" variable (:type ("Dllist" type (:type "class") nil nil)) nil [241 263])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [274 283])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [284 303]))                  
+                :type "int")
+                nil [265 388]))          
+      :file "main.c"
+      :pointmax 389
+      :fsize 378
+      :lastmodtime '(23031 9817 32386 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("lib/btree/inc/btree.h" include nil nil [60 92])
+            ("lib/libfdr/jrb.h" include nil nil [93 120])
+            ("lib/libfdr/dllist.h" include nil nil [121 151])
+            ("lib/v/v_io.h" include nil nil [152 175])
+            ("lib/v/v_string.h" include nil nil [176 203])
+            ("NAME_SIZE" variable (:constant-flag t) nil [214 223])
+            ("PHONE_SIZE" variable (:constant-flag t) nil [236 246])
+            ("g_contact_list" variable
+               (:typemodifiers ("extern")
+                :type ("Dllist" type (:type "class") nil nil))
+                nil [252 281])
+            ("contact" type
+               (:members 
+                  ( ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [316 337])
+                    ("phone" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [346 369]))                  
+                :type "struct")
+                nil [283 382])
+            ("contact_t" type
+               (:typedef ("contact" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [283 382]))          
+      :file "main.h"
+      :pointmax 383
+      :fsize 382
+      :lastmodtime '(23031 9682 33625 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NAME_SIZE" . ((number "100" 224 . 227)))
+          ("PHONE_SIZE" . ((number "50" 247 . 249)))
+          )
+)
+    (semanticdb-table "func.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_v_func_" variable (:constant-flag t) nil [59 67])
+            ("sayGoodbye" function
+               (:prototype-flag t
+                :type "void")
+                nil [69 87]))          
+      :file "func.h"
+      :pointmax 96
+      :fsize 95
+      :lastmodtime '(23023 63634 441556 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_v_func_")
+          )
+))
+  :file "!media!vietanhdev!DATA!Workspace!PhoneBook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

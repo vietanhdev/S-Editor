@@ -1,0 +1,650 @@
+;; Object libfdr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libfdr/"
+  :tables
+  (list
+    (semanticdb-table "dllist.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_DLLIST_H_" variable (:constant-flag t) nil [1266 1276])
+            ("jval.h" include nil nil [1278 1295])
+            ("dllist" type
+               (:members 
+                  ( ("flink" variable
+                       (:pointer 1
+                        :type ("dllist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1323 1344])
+                    ("blink" variable
+                       (:pointer 1
+                        :type ("dllist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1347 1368])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1371 1380]))                  
+                :type "struct")
+                nil [1297 1391])
+            ("Dllist" type
+               (:typedef ("dllist" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1297 1391])
+            ("new_dllist" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type ("Dllist" type (:type "class") nil nil))
+                nil [1393 1420])
+            ("free_dllist" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1440 1447]))                  
+                :type "int")
+                nil [1421 1448])
+            ("dll_append" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1468 1475])
+                    ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1476 1481]))                  
+                :type "int")
+                nil [1450 1482])
+            ("dll_prepend" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1502 1509])
+                    ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1510 1515]))                  
+                :type "int")
+                nil [1483 1516])
+            ("dll_insert_b" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1537 1544])
+                    ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1545 1550]))                  
+                :type "int")
+                nil [1517 1551])
+            ("dll_insert_a" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1579])
+                    ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1580 1585]))                  
+                :type "int")
+                nil [1552 1586])
+            ("dll_delete_node" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1611 1618]))                  
+                :type "int")
+                nil [1588 1619])
+            ("dll_empty" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1648]))                  
+                :type "int")
+                nil [1620 1649])
+            ("dll_val" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Dllist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1671 1678]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1651 1679])
+            ("dll_first" variable (:constant-flag t) nil [1689 1698])
+            ("dll_next" variable (:constant-flag t) nil [1723 1731])
+            ("dll_last" variable (:constant-flag t) nil [1756 1764])
+            ("dll_prev" variable (:constant-flag t) nil [1789 1797])
+            ("dll_nil" variable (:constant-flag t) nil [1822 1829])
+            ("dll_traverse" variable (:constant-flag t) nil [1846 1858])
+            ("dll_rtraverse" variable (:constant-flag t) nil [1937 1950]))          
+      :file "dllist.h"
+      :pointmax 2029
+      :fsize 2028
+      :lastmodtime '(23023 63634 486202 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("dll_last" (spp-arg-list ("d") 1764 . 1767) . ((semantic-list "((d)->blink)" 1768 . 1780)))
+          ("dll_prev" (spp-arg-list ("d") 1797 . 1800) . ((semantic-list "((d)->blink)" 1801 . 1813)))
+          ("dll_next" (spp-arg-list ("d") 1731 . 1734) . ((semantic-list "((d)->flink)" 1735 . 1747)))
+          ("dll_traverse" (spp-arg-list ("ptr" "list") 1858 . 1869) . ((FOR "for" 1874 . 1877) (semantic-list "(ptr = list->flink; ptr != list; ptr = ptr->flink)" 1878 . 1928)))
+          ("dll_first" (spp-arg-list ("d") 1698 . 1701) . ((semantic-list "((d)->flink)" 1702 . 1714)))
+          ("dll_nil" (spp-arg-list ("d") 1829 . 1832) . ((semantic-list "(d)" 1833 . 1836)))
+          ("dll_rtraverse" (spp-arg-list ("ptr" "list") 1950 . 1961) . ((FOR "for" 1966 . 1969) (semantic-list "(ptr = list->blink; ptr != list; ptr = ptr->blink)" 1970 . 2020)))
+          ("_DLLIST_H_")
+          )
+)
+    (semanticdb-table "jrb.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_JRB_H_" variable (:constant-flag t) nil [1264 1271])
+            ("jval.h" include nil nil [1273 1290])
+            ("jrb_node" type
+               (:members 
+                  ( ("red" variable (:type "unsigned char") (reparse-symbol classsubparts) [1419 1437])
+                    ("internal" variable (:type "unsigned char") (reparse-symbol classsubparts) [1440 1463])
+                    ("left" variable (:type "unsigned char") (reparse-symbol classsubparts) [1466 1485])
+                    ("roothead" variable (:type "unsigned char") (reparse-symbol classsubparts) [1488 1511])
+                    ("flink" variable
+                       (:pointer 1
+                        :type ("jrb_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1552 1575])
+                    ("blink" variable
+                       (:pointer 1
+                        :type ("jrb_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1578 1601])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("jrb_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1604 1628])
+                    ("key" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1631 1640])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1643 1652]))                  
+                :type "struct")
+                nil [1391 1660])
+            ("JRB" type
+               (:typedef ("jrb_node" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1391 1660])
+            ("make_jrb" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type ("JRB" type (:type "class") nil nil))
+                nil [1663 1685])
+            ("jrb_insert_str" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tree" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1931])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1932 1942])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1943 1952]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [1896 1953])
+            ("jrb_insert_int" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tree" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 1989])
+                    ("ikey" variable (:type "int") (reparse-symbol arg-sub-list) [1990 1999])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2000 2009]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [1954 2010])
+            ("jrb_insert_dbl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tree" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2037 2046])
+                    ("dkey" variable (:type "double") (reparse-symbol arg-sub-list) [2047 2059])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2060 2069]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2011 2070])
+            ("jrb_insert_gen" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("tree" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2097 2106])
+                    ("key" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2107 2116])
+                    ("val" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2117 2126])
+                    ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2139 2144])
+                            ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2144 2149]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2071 2151])
+            ("jrb_find_str" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2291 2300])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2301 2311]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2267 2312])
+            ("jrb_find_int" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2337 2346])
+                    ("ikey" variable (:type "int") (reparse-symbol arg-sub-list) [2347 2356]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2313 2357])
+            ("jrb_find_dbl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2382 2391])
+                    ("dkey" variable (:type "double") (reparse-symbol arg-sub-list) [2392 2404]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2358 2405])
+            ("jrb_find_gen" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2430 2439])
+                    ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2440 2445])
+                    ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2458 2463])
+                            ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2464 2469]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2406 2471])
+            ("jrb_find_gte_str" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2675 2684])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2685 2695])
+                    ("found" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2696 2707]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2647 2708])
+            ("jrb_find_gte_int" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2737 2746])
+                    ("ikey" variable (:type "int") (reparse-symbol arg-sub-list) [2747 2756])
+                    ("found" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2757 2768]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2709 2769])
+            ("jrb_find_gte_dbl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2798 2807])
+                    ("dkey" variable (:type "double") (reparse-symbol arg-sub-list) [2808 2820])
+                    ("found" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2821 2832]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2770 2833])
+            ("jrb_find_gte_gen" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2862 2871])
+                    ("key" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2872 2881])
+                    ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2925 2930])
+                            ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2931 2936]))                          
+                        :type "int")
+                        nil nil)
+                    ("found" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2938 2949]))                  
+                :type ("JRB" type (:type "class") nil nil))
+                nil [2834 2950])
+            ("jrb_delete_node" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("node" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3152 3161]))                  
+                :type "void")
+                nil [3124 3162])
+            ("jrb_free_tree" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("root" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3293 3302]))                  
+                :type "void")
+                nil [3267 3303])
+            ("jrb_val" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("node" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3365 3374]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [3345 3375])
+            ("jrb_nblack" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("n" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3492 3498]))                  
+                :type "int")
+                nil [3470 3499])
+            ("jrb_plength" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type ("JRB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3610 3616]))                  
+                :type "int")
+                nil [3594 3617])
+            ("jrb_first" variable (:constant-flag t) nil [3698 3707])
+            ("jrb_last" variable (:constant-flag t) nil [3730 3738])
+            ("jrb_next" variable (:constant-flag t) nil [3761 3769])
+            ("jrb_prev" variable (:constant-flag t) nil [3792 3800])
+            ("jrb_empty" variable (:constant-flag t) nil [3823 3832])
+            ("jrb_nil" variable (:constant-flag t) nil [3876 3883])
+            ("jrb_traverse" variable (:constant-flag t) nil [3908 3920])
+            ("jrb_rtraverse" variable (:constant-flag t) nil [4013 4026]))          
+      :file "jrb.h"
+      :pointmax 4117
+      :fsize 4116
+      :lastmodtime '(23023 63634 486841 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("jrb_first" (spp-arg-list ("n") 3707 . 3710) . ((semantic-list "(n->flink)" 3711 . 3721)))
+          ("jrb_next" (spp-arg-list ("n") 3769 . 3772) . ((semantic-list "(n->flink)" 3773 . 3783)))
+          ("_JRB_H_")
+          ("jrb_empty" (spp-arg-list ("t") 3832 . 3835) . ((semantic-list "(t->flink == t)" 3836 . 3851)))
+          ("jrb_nil" (spp-arg-list ("t") 3883 . 3886) . ((semantic-list "(t)" 3887 . 3890)))
+          ("jrb_rtraverse" (spp-arg-list ("ptr" "lst") 4026 . 4036) . ((FOR "for" 4041 . 4044) (semantic-list "(ptr = jrb_last(lst); ptr != jrb_nil(lst); ptr = jrb_prev(ptr))" 4044 . 4107)))
+          ("jrb_last" (spp-arg-list ("n") 3738 . 3741) . ((semantic-list "(n->blink)" 3742 . 3752)))
+          ("jrb_prev" (spp-arg-list ("n") 3800 . 3803) . ((semantic-list "(n->blink)" 3804 . 3814)))
+          ("jrb_traverse" (spp-arg-list ("ptr" "lst") 3920 . 3930) . ((FOR "for" 3935 . 3938) (semantic-list "(ptr = jrb_first(lst); ptr != jrb_nil(lst); ptr = jrb_next(ptr))" 3938 . 4002)))
+          )
+)
+    (semanticdb-table "jval.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_JVAL_H_" variable (:constant-flag t) nil [1265 1273])
+            ("Jval" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("i" variable (:type "int") (reparse-symbol classsubparts) [1351 1357])
+                          ("l" variable (:type "long") (reparse-symbol classsubparts) [1362 1369])
+                          ("f" variable (:type "float") (reparse-symbol classsubparts) [1374 1382])
+                          ("d" variable (:type "double") (reparse-symbol classsubparts) [1387 1396])
+                          ("v" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [1401 1409])
+                          ("s" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1414 1422])
+                          ("c" variable (:type "char") (reparse-symbol classsubparts) [1427 1434])
+                          ("uc" variable (:type "unsigned char") (reparse-symbol classsubparts) [1439 1456])
+                          ("sh" variable (:type "short") (reparse-symbol classsubparts) [1461 1470])
+                          ("ush" variable (:type "unsigned short") (reparse-symbol classsubparts) [1475 1494])
+                          ("ui" variable (:type "unsigned int") (reparse-symbol classsubparts) [1499 1515])
+                          ("iarray" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1520 1534])
+                          ("farray" variable
+                             (:dereference 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [1539 1555])
+                          ("carray" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1560 1575])
+                          ("ucarray" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1580 1605]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [1331 1615])
+            ("new_jval_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1642 1646]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1619 1647])
+            ("new_jval_l" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [1671 1676]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1648 1677])
+            ("new_jval_f" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [1701 1707]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1678 1708])
+            ("new_jval_d" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [1732 1739]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1709 1740])
+            ("new_jval_v" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1741 1776])
+            ("new_jval_s" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1800 1807]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1777 1808])
+            ("new_jval_c" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [1832 1837]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1809 1838])
+            ("new_jval_uc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1863 1877]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1839 1878])
+            ("new_jval_sh" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "short") (reparse-symbol arg-sub-list) [1903 1909]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1879 1910])
+            ("new_jval_ush" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1936 1951]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1911 1952])
+            ("new_jval_ui" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1977 1990]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1953 1991])
+            ("new_jval_iarray" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2020 2024])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2025 2029]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [1992 2030])
+            ("new_jval_farray" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [2059 2065])
+                    ("" variable (:type "float") (reparse-symbol arg-sub-list) [2066 2072]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [2031 2073])
+            ("new_jval_carray_nt" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2105 2112]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [2074 2113])
+            ("new_jval_carray_nnt" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2179 2186]))                  
+                :type ("Jval" type (:type "class") nil nil))
+                nil [2147 2187])
+            ("JNULL" variable
+               (:typemodifiers ("extern")
+                :type ("Jval" type (:type "class") nil nil))
+                nil [2289 2307])
+            ("jval_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2327 2332]))                  
+                :type "int")
+                nil [2309 2333])
+            ("jval_l" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2353 2358]))                  
+                :type "long")
+                nil [2334 2359])
+            ("jval_f" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2380 2385]))                  
+                :type "float")
+                nil [2360 2386])
+            ("jval_d" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2408 2413]))                  
+                :type "double")
+                nil [2387 2414])
+            ("jval_v" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2435 2440]))                  
+                :type "void")
+                nil [2415 2441])
+            ("jval_s" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2462 2467]))                  
+                :type "char")
+                nil [2442 2468])
+            ("jval_c" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2488 2493]))                  
+                :type "char")
+                nil [2469 2494])
+            ("jval_uc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2524 2529]))                  
+                :type "unsigned char")
+                nil [2495 2530])
+            ("jval_sh" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2552 2557]))                  
+                :type "short")
+                nil [2531 2558])
+            ("jval_ush" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2590 2595]))                  
+                :type "unsigned short")
+                nil [2559 2596])
+            ("jval_ui" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2625 2630]))                  
+                :type "unsigned int")
+                nil [2597 2631])
+            ("jval_iarray" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2656 2661]))                  
+                :type "int")
+                nil [2632 2662])
+            ("jval_farray" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2689 2694]))                  
+                :type "float")
+                nil [2663 2695])
+            ("jval_carray" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Jval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2726]))                  
+                :type "char")
+                nil [2696 2727]))          
+      :file "jval.h"
+      :pointmax 2736
+      :fsize 2735
+      :lastmodtime '(23023 63634 487121 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_JVAL_H_")
+          )
+))
+  :file "!media!vietanhdev!DATA!Workspace!PhoneBook!lib!libfdr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

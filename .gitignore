@@ -13,3 +13,4 @@ jdee-server/*
 .mc-lists.el
 .swp
 irony/*
+session*

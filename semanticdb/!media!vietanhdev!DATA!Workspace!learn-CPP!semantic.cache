@@ -1,0 +1,57 @@
+;; Object learn-CPP/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "learn-CPP/"
+  :tables
+  (list
+    (semanticdb-table "ex1.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("ex1_io.h" include nil nil [21 40])
+            ("main" function (:type "int") nil [42 171]))          
+      :file "ex1.cpp"
+      :pointmax 226
+      :fsize 171
+      :lastmodtime '(23046 49432 526241 300000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ex1_io.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("EX1_IO_H" variable (:constant-flag t) nil [26 34])
+            ("readNumber" function
+               (:prototype-flag t
+                :type "int")
+                nil [36 53])
+            ("writeNumber" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [71 77]))                  
+                :type "void")
+                nil [54 78]))          
+      :file "ex1_io.h"
+      :pointmax 88
+      :fsize 87
+      :lastmodtime '(23046 49440 744432 800000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EX1_IO_H")
+          )
+)
+    (semanticdb-table "ex1_io.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("readNumber" function (:type "int") nil [22 139])
+            ("writeNumber" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [158 164]))                  
+                :type "void")
+                nil [141 226]))          
+      :file "ex1_io.cpp"
+      :pointmax 227
+      :fsize 226
+      :lastmodtime '(23046 46707 203322 800000)
+      :unmatched-syntax nil))
+  :file "!media!vietanhdev!DATA!Workspace!learn-CPP!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
