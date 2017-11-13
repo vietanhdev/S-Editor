@@ -11,6 +11,5 @@
 
 (dumb-jump-mode)
 
-
-(provide 'stark-modeline)
+(provide 'stark-jumping)
 ;;; stark-jumping.el ends here
