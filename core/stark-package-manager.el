@@ -30,6 +30,7 @@
     flycheck
     yaml-mode
     origami
+    dumb-jump
    )
    
   "List of packages to ensure are installed at launch.")
