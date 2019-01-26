@@ -8,7 +8,8 @@
 
 
 ;; Theme
-(defvar stark-theme 'dracula)
+;(defvar stark-theme 'dracula)
+(defvar stark-theme 'klere)
 
 ;; Setup Font
 (defvar stark-ensure-source-code-pro t "Ensure Source Code Pro font is installed.")
@@ -16,7 +17,7 @@
 (defvar stark-default-font-height 120) ;; 120 means the font size is 12
 
 ;; Tab width
-(defvar stark-default-tab-width 2)
+(defvar stark-default-tab-width 4)
 (defvar python-indent-offset 4) ;; Python
 
 ;; NyanCat - active Nyan cat on the modeline
